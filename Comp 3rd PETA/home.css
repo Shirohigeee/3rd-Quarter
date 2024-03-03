@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +11,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #000;
+    color: #f0ecec;
 }
 
 img {
@@ -26,17 +30,23 @@ ul {
     display: flex;
 }
 
-li {
+.watawat {
     padding-left: 20px;
+    font-size: 25px;
+    transition: all 0.9s ease 0s;
 }
 
 .watawat:hover {
-    color: #d0442c;
-    text-decoration: underline;
+    color: black;
+    text-decoration: none;
+    background-color: #f0ecec;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-body{
-    background-color: #f0ecec;
+body {
+    background-color: #d83434;
 }
 
 nav {
@@ -47,166 +57,63 @@ nav {
     height: 80px;
 }
 
-nav a.logo{
+nav a.logo {
     font-size: 33px;
-    color: #d0442c;
+    color: #f0ecec;
     font-weight: 600;
 }
 
-nav .login button{
-    padding: 8px 14px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-}
-
-nav .login button.signup{
-    background-color: #000;
-    color: #fff;
-    border-radius: 4px;
-    margin-right: 14px;
-}
-
 header {
-    padding: 0 80px;
+    padding-top: 100px;
     height: 100vh;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-image: url(5265-SeriesHeaders_OP_2000x800_wm.jpg);
-    background-repeat: no-repeat;    
+    
 }
 
-header .left{
-    width: 700px;
-    padding-left: 100px;
-}
-
-header .left h1{
+header .left h1 {
     font-size: 80px;
+    text-align: center;
+    padding-top: 300px;
 }
 
-header .left h1 span{
+header .left h1 span {
     color: #d0442c;
 }
 
-header .left p{
-    margin: 40px 0;
-    color: #777;
+#section2 h1 span {
+    color: #f0ecec;
+}
+
+#section2 h1 {
+    color: #f0ecec;
 }
 
 .links:hover {
-    color: #d0442c;
+    color: #f0ecec;
 }
 
-header img{
+header img {
     width: 900px;
 }
 
-h2.separator{
+h2.separator {
     padding: 0 80px;
     font-size: 40px;
     margin-top: 40px;
 }
 
-.gap1 {
-    height: 300px;
-    width: 100%;
-    position: relative;
-    background-color: #f0ecec;
-}
-
-.gap1 .img1 {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0px 0px;
-    opacity: 0.7;
-}
-
-.text {
-    font-size: 40px;
-    font-weight: 500;
-    color: white;
-}
-
-.gap1 .text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
 
 #section2 {
-    height: 50vh;
+    height: 0vh;
     display: inline-block;
     width: 100%;
-}
-
-.section101 {
-    height: 300px;
-}
-
-.gap2 {
-    height: 300px;
-    width: 100%;
-    background-color: #d0442c;
-    position: relative;
-}
-
-.gap2 .img2 {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0px 0px;
-    opacity: 0.7;
-}
-
-.gap2 .text2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.text2 {
-    font-size: 40px;
-    font-weight: 500;
-    color: white;
+    margin-top: 300px;
 }
 
 #section3 {
-    height: 100vh;
+    height: 100px;
     display: inline-block;
     width: 100%;
-}
-
-.gap3 {
-    height: 300px;
-    width: 100%;
-    position: relative;
-    background-color: #d0442c;
-}
-
-.gap3 .img3 {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    padding: 0px 0px;
-    opacity: 0.7;
-}
-
-.gap3 .text3 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.text3 {
-    font-size: 40px;
-    font-weight: 500;
-    color: white;
 }
 
 #section4 {
@@ -215,66 +122,6 @@ h2.separator{
     width: 100%;
 }
 
-footer .container{
-    background-color: black;
-}
-
-.row{
-    display: flex;
-
-    padding: 40px 100px;
-}
-
-.footer-col ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-.footer-col li {
-    padding: 10px;
-}
-
-.footer-col h4{
-    color: white;
-    margin-bottom: 25px;
-    font-size: 22px;
-    position: relative;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.footer-col h4::before{
-    content: '';
-    width: 70px;
-    height: 2px;
-    position: absolute;
-    background-color: #e91e64;
-    bottom: -10px;
-}
-
-.footer-col {
-    padding-left: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-col ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    opacity: 0.7;
-    transition: 0.5s;
-}
-
-.footer-col ul li a:hover{
-    opacity: 1;
-}
-
-.col p{
-    color: white;
-}
-
-
 #membersection {
     display: flex;
 }
@@ -282,10 +129,16 @@ footer .container{
 .luffypic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .luffypic .luffy {
@@ -294,6 +147,9 @@ footer .container{
     width: 300px;
     padding: 40px;
     border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
 }
 
 .luffypic .luffytext {
@@ -303,16 +159,42 @@ footer .container{
 .zoropic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .zoropic .zoro {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.zoropic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.zoro:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 40px;
     border-radius: 340px;
 }
@@ -324,10 +206,16 @@ footer .container{
 .sanjipic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .sanjipic .sanji {
@@ -336,14 +224,34 @@ footer .container{
     width: 300px;
     padding: 40px;
     border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.sanjipic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.sanji:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
 }
 
 .sanjipic .sanjitext {
     text-align: center;
 }
 
-.section22 {
-    height: 40vh;
+#section22 {
+    height: 30vh;
     display: inline-block;
     width: 100%;
     display: flex;
@@ -352,16 +260,42 @@ footer .container{
 .namipic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 450px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .namipic .nami {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 30px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.namipic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 450px;
+}
+
+.nami:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 30px;
     border-radius: 340px;
 }
@@ -373,16 +307,42 @@ footer .container{
 .ussoppic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .ussoppic .ussop {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.ussoppic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.ussop:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 40px;
     border-radius: 340px;
 }
@@ -392,7 +352,7 @@ footer .container{
 }
 
 .section23 {
-    height: 40vh;
+    height: 30vh;
     display: inline-block;
     width: 100%;
     display: flex;
@@ -401,16 +361,43 @@ footer .container{
 .chopperpic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .chopperpic .chopper {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.chopperpic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+
+}
+
+.chopper:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 40px;
     border-radius: 340px;
 }
@@ -422,16 +409,42 @@ footer .container{
 .robinpic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .robinpic .robin {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 30px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.robinpic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.robin:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 30px;
     border-radius: 340px;
 }
@@ -443,10 +456,16 @@ footer .container{
 .frankypic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .frankypic .franky {
@@ -455,14 +474,35 @@ footer .container{
     width: 300px;
     padding: 40px;
     border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.frankypic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.franky:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
 }
 
 .frankypic .frankytext {
     text-align: center;
 }
 
-#section24 {
-    height: 100vh;
+.section24 {
+    height: 50vh;
+    max-height: 100vh;
     display: block;
     width: 100%;
     display: flex;
@@ -471,16 +511,42 @@ footer .container{
 .brookpic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 450px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .brookpic .brook {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 30px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.brookpic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 450px;
+}
+
+.brook:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 30px;
     border-radius: 340px;
 }
@@ -492,16 +558,42 @@ footer .container{
 .jinbeipic {
     position: relative;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 100px rgba(0, 0, 0, .9);
     margin-left: 400px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+    background-color: #f0ecec;
 }
 
 .jinbeipic .jinbei {
     position: relative;
     height: 300px;
     width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.jinbeipic:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 400px;
+}
+
+.jinbei:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
     padding: 40px;
     border-radius: 340px;
 }
@@ -513,13 +605,32 @@ footer .container{
 h1 {
     text-align: center;
     padding: 50px;
+    font-size: 100px;
 }
 
 .luffypic:hover {
     position: relative;
-    width: 00px;
-    height: 450px;
+    width: 325px;
+    height: 425px;
     border-radius: 50px;
     box-shadow: 0 0 60px rgba(0, 0, 0, .3);
     margin-left: 100px;
+    align-items: center;
+
+}
+
+.luffy:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+#section3 {
+    display: flex;
+}
+
+#section1 {
+    margin: 0;
 }
