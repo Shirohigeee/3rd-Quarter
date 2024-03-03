@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    height: 700px;
+    width: 500px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    padding-left: 20px;
+}
+
+.watawat:hover {
+    color: #d0442c;
+    text-decoration: underline;
+}
+
+body {
+    background-color: #f0ecec;
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo {
+    font-size: 33px;
+    color: #d0442c;
+    font-weight: 600;
+}
+
+nav .login button {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup {
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+.saga {
+    display: flex;
+    margin: 120px;
+}
+
+.romance{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.romance .dawn {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.romance .romancedawn{
+    text-align: center;
+}
+
+.romance:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.dawn:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.ara{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.ara .basta{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.ara .arabasta {
+    text-align: center;
+}
+
+.ara:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.basta:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.sky {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.sky .piea {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+. .fish-manisland {
+    text-align: center;
+}
+
+.fish-man:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.island:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.dress{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.dress .rosa {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.dress .dressrosa {
+    text-align: center;
+}
+
+.dress:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.rosa:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.saga2 {
+    display: flex;
+    margin: 120px;
+}
+
+.thriller{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.thriller .bark {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.thriller .thrillerbark{
+    text-align: center;
+}
+
+.thriller:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.bark:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.summit{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.summit .war {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.summit .summitwar {
+    text-align: center;
+}
+
+.summit:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.war:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.fish-man{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.fish-man .island {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.fish-man .fish-manisland {
+    text-align: center;
+}
+
+.fish-man:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.island:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.dress{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.dress .rosa {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.dress .dressrosa {
+    text-align: center;
+}
+
+.dress:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.rosa:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.saga3 {
+    display: flex;
+    margin: 120px;
+}
+
+.whole{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.whole .cake {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.whole .wholecake {
+    text-align: center;
+}
+
+.whole:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.cake:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.wano{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.wano .country {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.wano .wanocountry {
+    text-align: center;
+}
+
+.wano:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.country:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
+
+.final{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    border: 1px;
+    overflow: hidden;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.final .saga {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 340px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.final .finalsaga {
+    text-align: center;
+}
+
+.final:hover {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    border-radius: 50px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .3);
+    margin-left: 100px;
+    align-items: center;
+
+}
+
+.saga:hover {
+    position: relative;
+    height: 0px;
+    width: 325px;
+    padding: 40px;
+    border-radius: 340px;
+}
